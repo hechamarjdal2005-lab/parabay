@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>À propos — Green Para Bay | L'histoire d'une parapharmacie à M'diq</title>
+  <meta name="description" content="Green Para Bay, parapharmacie fondée et tenue par Imane Errouahe, pharmacienne à M'diq. Expertise, proximité, bien-être et confiance : découvrez notre histoire et nos valeurs.">
+  <meta name="theme-color" content="#3fcb5c">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%233FCB5C'/%3E%3Cpath d='M23 10c-9 2-11.3 8.6-13.6 13.6l1.7.6c.8-2.2 2-3.9 3.4-5.1-2.5-1.7-3.3-4-3.3-6.2 0-4.1 3.2-7.2 7.2-7.2 1.5 0 2.9.5 4.1 1.3-1.6.2-3 .8-4.1 1.8 2.2.2 4 2 4 4.3 0 1.2-.4 2.3-1 3.2 1.4-.5 2.6-1.5 3.3-2.8C21 14.4 19.4 12 17 11.3Z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================================================
+       NAVBAR  (shared by every page)
+       ========================================================= -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Green Para Bay, accueil">
+        <span class="brand__mark">
+          <svg class="brand__leaf" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66c.83-2.37 2.2-4.31 3.74-5.66C7.83 17 7 14.43 7 12c0-4.5 3.5-8 8-8 1.7 0 3.27.56 4.55 1.5-1.74.17-3.34.92-4.55 1.95 2.5.18 4.5 2.25 4.5 4.8 0 1.31-.4 2.52-1.08 3.52 1.58-.57 2.83-1.64 3.58-3.02C20.84 11.82 19.1 9.5 17 8Z"/></svg>
+        </span>
+        <span class="brand__text">
+          Green Para Bay
+          <small>M'diq · 93200</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="index.html" data-nav="index.html">Accueil</a>
+        <a href="shop.html" data-nav="shop.html">Boutique</a>
+        <a href="services.html" data-nav="services.html">Services</a>
+        <a href="about.html" data-nav="about.html">À propos</a>
+        <a href="contact.html" data-nav="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" type="button" aria-label="Ouvrir le panier">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2 3h2.2l2.6 12.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L22 7H5.4"/></svg>
+          <span class="cart-badge">0</span>
+        </button>
+
+        <button class="menu-toggle tap-scale" id="menuToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__panel">
+      <nav class="mobile-menu__links" aria-label="Menu mobile">
+        <a href="index.html" data-nav="index.html">Accueil</a>
+        <a href="shop.html" data-nav="shop.html">Boutique</a>
+        <a href="services.html" data-nav="services.html">Services</a>
+        <a href="about.html" data-nav="about.html">À propos</a>
+        <a href="contact.html" data-nav="contact.html">Contact</a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <p class="mobile-menu__meta">
+          <strong>Green Para Bay</strong><br>
+          Av. Moussa Ibn Noussair, M'diq 93200<br>
+          06 41 38 19 10 · Lun–Sam 9h–20h
+        </p>
+        <a class="btn btn--whatsapp btn--block" href="https://wa.me/212641381910" target="_blank" rel="noopener">
+          <span class="btn-icon" data-icon="whatsapp"></span> Nous écrire
+        </a>
+        <a class="btn btn--outline btn--block" href="https://instagram.com/green_para_bay" target="_blank" rel="noopener">
+          <span class="btn-icon" data-icon="instagram"></span> @green_para_bay
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <main>
+
+    <!-- =========================================================
+         PAGE HERO
+         ========================================================= -->
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="index.html">Accueil</a><span>/</span><span>À propos</span>
+        </nav>
+        <span class="eyebrow reveal"><span data-icon="heart" data-icon-size="15"></span> Notre histoire</span>
+        <h1 class="reveal" data-delay="60">Une parapharmacie,<br>une pharmacienne, un quartier</h1>
+        <p class="reveal" data-delay="120">
+          Green Para Bay est née à M'diq, sur la côte méditerranéenne, avec une idée
+          simple : la parapharmacie de proximité doit ressembler à une pharmacie de
+          quartier, pas à un rayon de grande surface.
+        </p>
+      </div>
+      <span class="wave wave--bottom" aria-hidden="true"></span>
+    </section>
+
+    <!-- =========================================================
+         NOTRE HISTOIRE
+         ========================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="story">
+          <div class="story__media reveal">
+            <div data-img="https://images.unsplash.com/photo-1607619056574-7b8d3ee536b2?auto=format&fit=crop&w=900&q=80" data-alt="L'intérieur de la parapharmacie Green Para Bay" style="position:absolute;inset:0"></div>
+          </div>
+
+          <div class="story__body">
+            <span class="eyebrow reveal"><span data-icon="sparkle" data-icon-size="15"></span> Depuis le début</span>
+            <h2 class="section-title reveal" data-delay="60" style="text-align:left">La santé d'abord, la beauté ensuite</h2>
+
+            <p class="reveal" data-delay="120">
+              Imane Errouahe a exercé en pharmacie d'officine avant d'ouvrir Green Para
+              Bay. Ce qu'elle a gardé de cette expérience, c'est une conviction simple :
+              une personne qui entre dans une parapharmacie cherche rarement un
+              produit. Elle cherche une réponse.
+            </p>
+
+            <p class="reveal" data-delay="160">
+              Alors chez Green Para Bay, la formation de la pharmacienne vient en
+              premier. <strong>Chaque produit en rayon a une raison d'être</strong> — il
+              a été choisi pour un besoin réel, pas parce qu'il remplissait un casier.
+              La beauté et le bien-être sont traités avec la même rigueur que la
+              santé : c'est ce qui rend le conseil crédible.
+            </p>
+
+            <p class="reveal" data-delay="200">
+              La parapharmacie s'adresse à M'diq et aux communes de la côte : Oued
+              Laou, Larache, Kénitra. Beaucoup de clients sont desुलines qui travaillent
+              loin, alors la commande via WhatsApp et la livraison à domicile sont
+              devenues la règle, pas l'exception.
+            </p>
+
+            <div class="story__sign reveal" data-delay="240">
+              <span class="avatar">IE</span>
+              <span>
+                <strong>Imane Errouahe</strong>
+                <small>Pharmacienne diploma · Fondatrice de Green Para Bay</small>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         NOS VALEURS
+         ========================================================= -->
+    <section class="section section--white" id="valeurs">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span data-icon="star" data-icon-size="15"></span> Nos valeurs</span>
+          <h2 class="section-title">Ce qui nous guide <em>chaque jour</em></h2>
+          <p class="section-sub">Quatre principes, affichés en boutique et appliqués sans exception.</p>
+        </div>
+
+        <div class="values">
+          <div class="value-card reveal" data-num="01">
+            <span class="value-card__icon" data-icon="shield" data-icon-size="26"></span>
+            <h3>Expertise</h3>
+            <p>
+              Chaque conseil vient d'une pharmacienne diplômée. Nous préférons dire
+              « je ne sais pas, je vais vérifier » plutôt que de recommander au hasard.
+            </p>
+          </div>
+
+          <div class="value-card reveal" data-delay="80" data-num="02">
+            <span class="value-card__icon" data-icon="pin" data-icon-size="26"></span>
+            <h3>Proximité</h3>
+            <p>
+              Un quartier, des visages connus, un créneau de livraison qui tient
+              parole. On est à M'diq, pas dans un entrepôt.
+            </p>
+          </div>
+
+          <div class="value-card reveal" data-delay="160" data-num="03">
+            <span class="value-card__icon" data-icon="smile" data-icon-size="26"></span>
+            <h3>Bien-être</h3>
+            <p>
+              La beauté et le bien-être ne sont pas un luxe. On propose des soins
+              efficaces à des prix honnêtes, avec des alternatives quand le budget
+              est serré.
+            </p>
+          </div>
+
+          <div class="value-card reveal" data-delay="240" data-num="04">
+            <span class="value-card__icon" data-icon="heart" data-icon-size="26"></span>
+            <h3>Confiance</h3>
+            <p>
+              Produits authentiques, lots vérifiables, promotions réelles, et aucun
+              conseil dicté par une marque. Ce que nous racontons en story, nous le
+              pratiquons en boutique.
+            </p>
+          </div>
+        </div>
+      </div>
+      <span class="wave wave--bottom wave--white" aria-hidden="true"></span>
+    </section>
+
+    <!-- =========================================================
+         GALERIE : LA BOUTIQUE, L'ÉQUIPE, M'DIQ
+         ========================================================= -->
+    <section class="section section--blobs" id="galerie">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow eyebrow--coral"><span data-icon="camera" data-icon-size="15"></span> En images</span>
+          <h2 class="section-title">La boutique, l'équipe, <em>M'diq</em></h2>
+          <p class="section-sub">
+            Un aperçu de notre quotidien, entre les rayons et la Méditerranée.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery__item gallery__item--wide reveal">
+            <div data-img="https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1000&q=80" data-alt="Les rayons de Green Para Bay" style="position:absolute;inset:0"></div>
+            <figcaption>Les rayons — soins, solaire, bien-être</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-delay="80">
+            <div data-img="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80" data-alt="Selection de soins" style="position:absolute;inset:0"></div>
+            <figcaption>La sélection du mois</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-delay="140">
+            <div data-img="https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?auto=format&fit=crop&w=800&q=80" data-alt="Comptoir et accueil" style="position:absolute;inset:0"></div>
+            <figcaption>Le comptoir conseil</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-delay="200">
+            <div data-img="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=80" data-alt="Portrait de la pharmacienne" style="position:absolute;inset:0"></div>
+            <figcaption>Imane, votre pharmacienne</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal" data-delay="260">
+            <div data-img="https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?auto=format&fit=crop&w=800&q=80" data-alt="La côte méditerranéenne" style="position:absolute;inset:0"></div>
+            <figcaption>La côte, à quelques minutes</figcaption>
+          </figure>
+
+          <figure class="gallery__item gallery__item--wide reveal" data-delay="320">
+            <div data-img="https://images.unsplash.com/photo-1550572017-edd951aa8f41?auto=format&fit=crop&w=1000&q=80" data-alt="Le rayon compléments" style="position:absolute;inset:0"></div>
+            <figcaption>Le rayon bien-être &amp; compléments</figcaption>
+          </figure>
+        </div>
+      </div>
+      <span class="wave wave--bottom" aria-hidden="true"></span>
+    </section>
+
+    <!-- =========================================================
+         CHEMIN
+         ========================================================= -->
+    <section class="section section--white">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span data-icon="calendar" data-icon-size="15"></span> Notre chemin</span>
+          <h2 class="section-title">Quelques étapes</h2>
+        </div>
+
+        <div class="timeline" style="max-width:620px;margin-inline:auto">
+          <div class="timeline__item reveal">
+            <span class="timeline__year">Ouverture</span>
+            <h3>Green Para Bay ouvre à M'diq</h3>
+            <p>
+              Un petit local sur l'avenue Moussa Ibn Noussair, un rayon dermocosmétique
+              choisi à la main, et une pharmacienne derrière le comptoir.
+            </p>
+          </div>
+
+          <div class="timeline__item reveal" data-delay="80">
+            <span class="timeline__year">+1 an</span>
+            <h3>Les premiers conseils par WhatsApp</h3>
+            <p>
+              Les clientes ont commencé à envoyer des photos et des questions. Le conseil à
+              distance devient une habitude, puis un vrai service.
+            </p>
+          </div>
+
+          <div class="timeline__item reveal" data-delay="160">
+            <span class="timeline__year">+2 ans</span>
+            <h3>La livraison à domicile</h3>
+            <p>
+              Beaucoup de clientes travaillent hors de M'diq. La livraison en main
+              propre, avec créneau confirmé, répond à un vrai besoin.
+            </p>
+          </div>
+
+          <div class="timeline__item reveal" data-delay="240">
+            <span class="timeline__year">Aujourd'hui</span>
+            <h3>Une communauté de +2 700 abonnés</h3>
+            <p>
+              248 publications, des conseils partagés chaque semaine, et une équipe qui
+              connaît ses clients par leur prénom.
+            </p>
+          </div>
+        </div>
+      </div>
+      <span class="wave wave--bottom wave--white" aria-hidden="true"></span>
+    </section>
+
+    <!-- =========================================================
+         CTA
+         ========================================================= -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="conseil__grid" style="align-items:center">
+          <div class="section-head reveal" style="margin:0;text-align:left">
+            <span class="eyebrow"><span data-icon="whatsapp" data-icon-size="15"></span> Passons chez vous</span>
+            <h2 class="section-title" style="text-align:left">Une question ? <em>Passez nous voir</em></h2>
+            <p class="section-sub" style="margin-left:0;text-align:left">
+              Ou simplement envoyez un message, on s'occupe du reste.
+            </p>
+            <div class="btn-row" style="margin-top:20px">
+              <a class="btn btn--whatsapp" href="https://wa.me/212641381910" target="_blank" rel="noopener">
+                <span class="btn-icon" data-icon="whatsapp"></span> Nous écrire
+              </a>
+              <a class="btn btn--outline" href="contact.html">Nous trouver</a>
+            </div>
+          </div>
+
+          <div class="stats reveal" data-delay="80">
+            <div class="stat">
+              <span class="stat__icon" data-icon="instagram" data-icon-size="21"></span>
+              <span class="stat__number" data-count="2705" data-suffix="+">0</span>
+              <span class="stat__label">Abonnés Instagram</span>
+            </div>
+            <div class="stat">
+              <span class="stat__icon" data-icon="truck" data-icon-size="21"></span>
+              <span class="stat__number" data-count="1200" data-suffix="+">0</span>
+              <span class="stat__label">Commandes livrées</span>
+            </div>
+            <div class="stat">
+              <span class="stat__icon" data-icon="heart" data-icon-size="21"></span>
+              <span class="stat__number" data-count="5" data-suffix=" ans">0</span>
+              <span class="stat__label">Au service de M'diq</span>
+            </div>
+            <div class="stat">
+              <span class="stat__icon" data-icon="star" data-icon-size="21"></span>
+              <span class="stat__number" data-count="18" data-suffix="+">0</span>
+              <span class="stat__label">Marques partenaires</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="footer">
+    <span class="wave wave--top" aria-hidden="true"></span>
+
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__about">
+          <a class="brand" href="index.html">
+            <span class="brand__mark">
+              <svg class="brand__leaf" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66c.83-2.37 2.2-4.31 3.74-5.66C7.83 17 7 14.43 7 12c0-4.5 3.5-8 8-8 1.7 0 3.27.56 4.55 1.5-1.74.17-3.34.92-4.55 1.95 2.5.18 4.5 2.25 4.5 4.8 0 1.31-.4 2.52-1.08 3.52 1.58-.57 2.83-1.64 3.58-3.02C20.84 11.82 19.1 9.5 17 8Z"/></svg>
+            </span>
+            <span class="brand__text">
+              Green Para Bay
+              <small>M'diq · 93200</small>
+            </span>
+          </a>
+
+          <p>
+            Votre parapharmacie de proximité sur la côte méditerranéenne. Santé,
+            beauté et bien-être accompagnés par une pharmacienne, avec commande
+            simple via WhatsApp et livraison à domicile.
+          </p>
+
+          <div class="footer__tagline">
+            <span class="tag">Santé</span>
+            <span class="tag">Beauté</span>
+            <span class="tag">Bien-être</span>
+          </div>
+
+          <div class="footer__social">
+            <a class="is-ig" href="https://instagram.com/green_para_bay" target="_blank" rel="noopener" aria-label="Instagram">
+              <span data-icon="instagram" data-icon-size="19"></span>
+            </a>
+            <a href="https://wa.me/212641381910" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <span data-icon="whatsapp" data-icon-size="19"></span>
+            </a>
+            <a href="tel:+212641381910" aria-label="Téléphone">
+              <span data-icon="phone" data-icon-size="19"></span>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Navigation</h4>
+          <nav class="footer__links">
+            <a href="index.html">Accueil</a>
+            <a href="shop.html">Boutique</a>
+            <a href="services.html">Nos services</a>
+            <a href="about.html">À propos</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4>Nous trouver</h4>
+          <div class="footer__contact">
+            <p class="footer__contact-item">
+              <span data-icon="pin" data-icon-size="19"></span>
+              <span>
+                Av. Moussa Ibn Noussair<br>
+                M'diq 93200, Maroc<br>
+                <a href="https://www.google.com/maps/search/?api=1&query=Av.+Moussa+Ibn+Noussair,+M%27diq+93200,+Morocco" target="_blank" rel="noopener">Voir sur Google Maps</a>
+              </span>
+            </p>
+
+            <p class="footer__contact-item">
+              <span data-icon="phone" data-icon-size="19"></span>
+              <span>
+                <a href="tel:+212641381910">06 41 38 19 10</a><br>
+                WhatsApp &amp; appels
+              </span>
+            </p>
+
+            <p class="footer__contact-item">
+              <span data-icon="clock" data-icon-size="19"></span>
+              <span class="footer__hours" data-hours data-hours-compact>
+                <span>Lun – Sam · 09h00 – 20h00</span>
+                <span>Dimanche · 10h00 – 13h00</span>
+              </span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        © <span data-year>2026</span> Green Para Bay · Parapharmacie à M'diq.
+        Tous droits réservés. · Site conçu avec soin sur la côte.
+      </div>
+    </div>
+  </footer>
+
+
+    <!-- Cart panel markup is injected here by cart.js -->
+  <div id="cart-root"></div>
+
+  <!-- Sticky mobile action bar: slides in once the hero is passed -->
+  <div class="mobile-bar" id="mobileBar">
+    <a class="btn btn--outline" style="flex:1" href="tel:+212641381910">
+      <span class="btn-icon" data-icon="phone"></span> Appeler
+    </a>
+    <a class="btn btn--whatsapp" style="flex:1.4" href="https://wa.me/212641381910" target="_blank" rel="noopener">
+      <span class="btn-icon" data-icon="whatsapp"></span> WhatsApp
+    </a>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="cart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+</body>
+</html>

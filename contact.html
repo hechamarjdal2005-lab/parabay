@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact — Green Para Bay | Av. Moussa Ibn Noussair, M'diq 93200</title>
+  <meta name="description" content="Contactez Green Para Bay : Av. Moussa Ibn Noussair, M'diq 93200. Téléphone et WhatsApp 06 41 38 19 10, Instagram @green_para_bay. Horaires et plan d'accès.">
+  <meta name="theme-color" content="#3fcb5c">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%233FCB5C'/%3E%3Cpath d='M23 10c-9 2-11.3 8.6-13.6 13.6l1.7.6c.8-2.2 2-3.9 3.4-5.1-2.5-1.7-3.3-4-3.3-6.2 0-4.1 3.2-7.2 7.2-7.2 1.5 0 2.9.5 4.1 1.3-1.6.2-3 .8-4.1 1.8 2.2.2 4 2 4 4.3 0 1.2-.4 2.3-1 3.2 1.4-.5 2.6-1.5 3.3-2.8C21 14.4 19.4 12 17 11.3Z' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================================================
+       NAVBAR  (shared by every page)
+       ========================================================= -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Green Para Bay, accueil">
+        <span class="brand__mark">
+          <svg class="brand__leaf" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66c.83-2.37 2.2-4.31 3.74-5.66C7.83 17 7 14.43 7 12c0-4.5 3.5-8 8-8 1.7 0 3.27.56 4.55 1.5-1.74.17-3.34.92-4.55 1.95 2.5.18 4.5 2.25 4.5 4.8 0 1.31-.4 2.52-1.08 3.52 1.58-.57 2.83-1.64 3.58-3.02C20.84 11.82 19.1 9.5 17 8Z"/></svg>
+        </span>
+        <span class="brand__text">
+          Green Para Bay
+          <small>M'diq · 93200</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Navigation principale">
+        <a href="index.html" data-nav="index.html">Accueil</a>
+        <a href="shop.html" data-nav="shop.html">Boutique</a>
+        <a href="services.html" data-nav="services.html">Services</a>
+        <a href="about.html" data-nav="about.html">À propos</a>
+        <a href="contact.html" data-nav="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="cart-btn" type="button" aria-label="Ouvrir le panier">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="20" r="1.6"/><circle cx="18" cy="20" r="1.6"/><path d="M2 3h2.2l2.6 12.4a2 2 0 0 0 2 1.6h8.6a2 2 0 0 0 2-1.6L22 7H5.4"/></svg>
+          <span class="cart-badge">0</span>
+        </button>
+
+        <button class="menu-toggle tap-scale" id="menuToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mobileMenu">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile drawer -->
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu__panel">
+      <nav class="mobile-menu__links" aria-label="Menu mobile">
+        <a href="index.html" data-nav="index.html">Accueil</a>
+        <a href="shop.html" data-nav="shop.html">Boutique</a>
+        <a href="services.html" data-nav="services.html">Services</a>
+        <a href="about.html" data-nav="about.html">À propos</a>
+        <a href="contact.html" data-nav="contact.html">Contact</a>
+      </nav>
+      <div class="mobile-menu__foot">
+        <p class="mobile-menu__meta">
+          <strong>Green Para Bay</strong><br>
+          Av. Moussa Ibn Noussair, M'diq 93200<br>
+          06 41 38 19 10 · Lun–Sam 9h–20h
+        </p>
+        <a class="btn btn--whatsapp btn--block" href="https://wa.me/212641381910" target="_blank" rel="noopener">
+          <span class="btn-icon" data-icon="whatsapp"></span> Nous écrire
+        </a>
+        <a class="btn btn--outline btn--block" href="https://instagram.com/green_para_bay" target="_blank" rel="noopener">
+          <span class="btn-icon" data-icon="instagram"></span> @green_para_bay
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <main>
+
+    <!-- =========================================================
+         PAGE HERO
+         ========================================================= -->
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <nav class="breadcrumb" aria-label="Fil d'Ariane">
+          <a href="index.html">Accueil</a><span>/</span><span>Contact</span>
+        </nav>
+        <span class="eyebrow reveal"><span data-icon="pin" data-icon-size="15"></span> Nous trouver</span>
+        <h1 class="reveal" data-delay="60">Passez nous voir,<br>ou écrivez-nous</h1>
+        <p class="reveal" data-delay="120">
+          Av. Moussa Ibn Noussair, M'diq 93200. Le plus rapide reste WhatsApp :
+          Imane répond personnellement.
+        </p>
+        <div class="btn-row reveal" data-delay="180" style="justify-content:center;margin-top:8px">
+          <a class="btn btn--whatsapp" href="https://wa.me/212641381910" target="_blank" rel="noopener">
+            <span class="btn-icon" data-icon="whatsapp"></span> 06 41 38 19 10
+          </a>
+          <a class="btn btn--outline" href="tel:+212641381910">
+            <span class="btn-icon" data-icon="phone"></span> Appeler
+          </a>
+        </div>
+      </div>
+      <span class="wave wave--bottom" aria-hidden="true"></span>
+    </section>
+
+    <!-- =========================================================
+         FORMULAIRE + INFOS
+         ========================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+
+          <!-- ---- formulaire ---- -->
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <div class="section-head" style="text-align:left;margin:0 0 8px">
+              <span class="eyebrow"><span data-icon="chat" data-icon-size="15"></span> Écrivez-nous</span>
+              <h2 class="section-title" style="text-align:left;font-size:clamp(1.5rem,4.4vw,2.1rem)">Une question, un conseil, une commande ?</h2>
+              <p class="section-sub" style="text-align:left;margin:0">
+                Remplissez le formulaire : il prépare votre message et l'ouvre dans
+                WhatsApp, où vous pourrez le relire avant de l'envoyer.
+              </p>
+            </div>
+
+            <div class="form-row">
+              <div class="form-field">
+                <label for="cf-name">Votre nom <span>*</span></label>
+                <input type="text" id="cf-name" name="name" placeholder="Salma B." autocomplete="name" required>
+              </div>
+
+              <div class="form-field">
+                <label for="cf-phone">Téléphone</label>
+                <input type="tel" id="cf-phone" name="phone" placeholder="06 12 34 56 78" autocomplete="tel">
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="cf-subject">Sujet <span>*</span></label>
+              <select id="cf-subject" name="subject">
+                <option>Conseil personnalisé</option>
+                <option>Question sur un produit</option>
+                <option>Commande et livraison</option>
+                <option>Suivi de commande</option>
+                <option>Conseil maman &amp; bébé</option>
+                <option>Autre demande</option>
+              </select>
+            </div>
+
+            <div class="form-field">
+              <label for="cf-message">Votre message <span>*</span></label>
+              <textarea id="cf-message" name="message" placeholder="Décrivez votre besoin : type de peau, problème, produit concerné…" required></textarea>
+            </div>
+
+            <button class="btn btn--whatsapp btn--block" type="submit">
+              <span class="btn-icon" data-icon="whatsapp"></span>
+              Envoyer via WhatsApp
+            </button>
+
+            <p class="form-note">
+              Vos données ne sont ni enregistrées ni partagées. Elles servent
+              uniquement à composer le message WhatsApp que vous validez vous-même.
+            </p>
+          </form>
+
+          <!-- ---- infos ---- -->
+          <div class="contact-info">
+
+            <a class="info-card reveal" href="https://wa.me/212641381910" target="_blank" rel="noopener">
+              <span class="info-card__icon info-card__icon--wa" data-icon="whatsapp" data-icon-size="23"></span>
+              <span class="info-card__body">
+                <strong>WhatsApp</strong>
+                <p>06 41 38 19 10 — le plus rapide pour un conseil ou une commande.</p>
+              </span>
+            </a>
+
+            <a class="info-card reveal" data-delay="60" href="tel:+212641381910">
+              <span class="info-card__icon" data-icon="phone" data-icon-size="23"></span>
+              <span class="info-card__body">
+                <strong>Téléphone</strong>
+                <p>06 41 38 19 10 — appel en heures d'ouverture.</p>
+              </span>
+            </a>
+
+            <a class="info-card reveal" data-delay="120" href="https://www.google.com/maps/search/?api=1&query=Av.+Moussa+Ibn+Noussair,+M%27diq+93200,+Morocco" target="_blank" rel="noopener">
+              <span class="info-card__icon" data-icon="pin" data-icon-size="23"></span>
+              <span class="info-card__body">
+                <strong>Adresse</strong>
+                <p>Av. Moussa Ibn Noussair<br>M'diq 93200, Maroc</p>
+              </span>
+            </a>
+
+            <a class="info-card reveal" data-delay="180" href="https://instagram.com/green_para_bay" target="_blank" rel="noopener">
+              <span class="info-card__icon" data-icon="instagram" data-icon-size="23"></span>
+              <span class="info-card__body">
+                <strong>Instagram</strong>
+                <p>@green_para_bay — +2 705 abonnés, 248 publications.</p>
+              </span>
+            </a>
+
+            <div class="hours reveal" data-delay="240">
+              <h3>Horaires d'ouverture</h3>
+              <div data-hours></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         CARTE
+         ========================================================= -->
+    <section class="section section--tight section--white">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow"><span data-icon="pin" data-icon-size="15"></span> Plan d'accès</span>
+          <h2 class="section-title">Nous trouver à <em>M'diq</em></h2>
+          <p class="section-sub">Av. Moussa Ibn Noussair, M'diq 93200 — en face de l'axe principal, près de la côte.</p>
+        </div>
+
+        <div class="map-embed reveal">
+          <iframe
+            title="Carte du plan d'accès à Green Para Bay, Av. Moussa Ibn Noussair, M'diq 93200"
+            src="https://www.google.com/maps?q=Av.%20Moussa%20Ibn%20Noussair%2C%20M%27diq%2093200%2C%20Morocco&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+
+        <div class="btn-row reveal" style="justify-content:center;margin-top:22px">
+          <a class="btn btn--green" href="https://www.google.com/maps/search/?api=1&query=Av.+Moussa+Ibn+Noussair,+M%27diq+93200,+Morocco" target="_blank" rel="noopener">
+            <span class="btn-icon" data-icon="pin"></span> Ouvrir dans Google Maps
+          </a>
+          <a class="btn btn--outline" href="https://www.google.com/maps/dir/?api=1&destination=Av.+Moussa+Ibn+Noussair,+M%27diq+93200,+Morocco" target="_blank" rel="noopener">
+            <span class="btn-icon" data-icon="truck"></span> Itinéraire
+          </a>
+        </div>
+      </div>
+      <span class="wave wave--bottom wave--white" aria-hidden="true"></span>
+    </section>
+
+    <!-- =========================================================
+         RÉSEAUX
+         ========================================================= -->
+    <section class="section section--tight">
+      <div class="container" style="text-align:center">
+        <div class="section-head reveal">
+          <span class="eyebrow eyebrow--coral"><span data-icon="instagram" data-icon-size="15"></span> Nous suivre</span>
+          <h2 class="section-title">Rejoignez la <em>communauté</em></h2>
+          <p class="section-sub">
+            Conseils, nouveautés et promotions partagés chaque semaine. Posez vos
+            questions en story, on vous répond.
+          </p>
+        </div>
+
+        <div class="social-row reveal">
+          <a class="social-btn social-btn--ig" href="https://instagram.com/green_para_bay" target="_blank" rel="noopener">
+            <span data-icon="instagram" data-icon-size="20"></span> @green_para_bay
+          </a>
+          <a class="social-btn social-btn--wa" href="https://wa.me/212641381910" target="_blank" rel="noopener">
+            <span data-icon="whatsapp" data-icon-size="20"></span> Nous écrire
+          </a>
+          <a class="social-btn" href="tel:+212641381910">
+            <span data-icon="phone" data-icon-size="20"></span> 06 41 38 19 10
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <!-- =========================================================
+       FOOTER
+       ========================================================= -->
+  <footer class="footer">
+    <span class="wave wave--top" aria-hidden="true"></span>
+
+    <div class="container">
+      <div class="footer__grid">
+
+        <div class="footer__about">
+          <a class="brand" href="index.html">
+            <span class="brand__mark">
+              <svg class="brand__leaf" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66c.83-2.37 2.2-4.31 3.74-5.66C7.83 17 7 14.43 7 12c0-4.5 3.5-8 8-8 1.7 0 3.27.56 4.55 1.5-1.74.17-3.34.92-4.55 1.95 2.5.18 4.5 2.25 4.5 4.8 0 1.31-.4 2.52-1.08 3.52 1.58-.57 2.83-1.64 3.58-3.02C20.84 11.82 19.1 9.5 17 8Z"/></svg>
+            </span>
+            <span class="brand__text">
+              Green Para Bay
+              <small>M'diq · 93200</small>
+            </span>
+          </a>
+
+          <p>
+            Votre parapharmacie de proximité sur la côte méditerranéenne. Santé,
+            beauté et bien-être accompagnés par une pharmacienne, avec commande
+            simple via WhatsApp et livraison à domicile.
+          </p>
+
+          <div class="footer__tagline">
+            <span class="tag">Santé</span>
+            <span class="tag">Beauté</span>
+            <span class="tag">Bien-être</span>
+          </div>
+
+          <div class="footer__social">
+            <a class="is-ig" href="https://instagram.com/green_para_bay" target="_blank" rel="noopener" aria-label="Instagram">
+              <span data-icon="instagram" data-icon-size="19"></span>
+            </a>
+            <a href="https://wa.me/212641381910" target="_blank" rel="noopener" aria-label="WhatsApp">
+              <span data-icon="whatsapp" data-icon-size="19"></span>
+            </a>
+            <a href="tel:+212641381910" aria-label="Téléphone">
+              <span data-icon="phone" data-icon-size="19"></span>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Navigation</h4>
+          <nav class="footer__links">
+            <a href="index.html">Accueil</a>
+            <a href="shop.html">Boutique</a>
+            <a href="services.html">Nos services</a>
+            <a href="about.html">À propos</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4>Nous trouver</h4>
+          <div class="footer__contact">
+            <p class="footer__contact-item">
+              <span data-icon="pin" data-icon-size="19"></span>
+              <span>
+                Av. Moussa Ibn Noussair<br>
+                M'diq 93200, Maroc<br>
+                <a href="https://www.google.com/maps/search/?api=1&query=Av.+Moussa+Ibn+Noussair,+M%27diq+93200,+Morocco" target="_blank" rel="noopener">Voir sur Google Maps</a>
+              </span>
+            </p>
+
+            <p class="footer__contact-item">
+              <span data-icon="phone" data-icon-size="19"></span>
+              <span>
+                <a href="tel:+212641381910">06 41 38 19 10</a><br>
+                WhatsApp &amp; appels
+              </span>
+            </p>
+
+            <p class="footer__contact-item">
+              <span data-icon="clock" data-icon-size="19"></span>
+              <span class="footer__hours" data-hours data-hours-compact>
+                <span>Lun – Sam · 09h00 – 20h00</span>
+                <span>Dimanche · 10h00 – 13h00</span>
+              </span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer__bottom">
+        © <span data-year>2026</span> Green Para Bay · Parapharmacie à M'diq.
+        Tous droits réservés. · Site conçu avec soin sur la côte.
+      </div>
+    </div>
+  </footer>
+
+
+    <!-- Cart panel markup is injected here by cart.js -->
+  <div id="cart-root"></div>
+
+  <!-- Sticky mobile action bar: slides in once the hero is passed -->
+  <div class="mobile-bar" id="mobileBar">
+    <a class="btn btn--outline" style="flex:1" href="tel:+212641381910">
+      <span class="btn-icon" data-icon="phone"></span> Appeler
+    </a>
+    <a class="btn btn--whatsapp" style="flex:1.4" href="https://wa.me/212641381910" target="_blank" rel="noopener">
+      <span class="btn-icon" data-icon="whatsapp"></span> WhatsApp
+    </a>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="cart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+</body>
+</html>
